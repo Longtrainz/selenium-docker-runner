@@ -3,12 +3,14 @@ pipeline {
     stages {
         stage('Run Test') {
             steps {
-                sh "docker-compose up"
+            //sh
+                bat "docker-compose up"
             }
         }
         stage('Bring Grid down') {
             steps {
-                sh "docker-compose down"
+            //sh
+                bat "docker-compose down"
             }
         }
     }
